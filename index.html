@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APEX RACING | Built for Speed. Driven by Passion.</title>
+  <meta name="description" content="Discover APEX RACING — high-performance cars, motorsport events, professional drivers and unforgettable racing experiences.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="APEX RACING | Built for Speed. Driven by Passion.">
+  <meta property="og:description" content="High-performance cars, motorsport events, professional drivers and unforgettable racing experiences.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1200&h=630&fit=crop">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Google Fonts: Orbitron (racing) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<nav class="navbar navbar-expand-lg fixed-top apex-navbar" id="apexNav">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand apex-logo" href="#home">
+      <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+      <span class="logo-text">APEX<span class="logo-red">RACING</span></span>
+    </a>
+
+    <!-- Mobile toggle -->
+    <button class="navbar-toggler apex-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#apexNavMenu" aria-controls="apexNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-line"></span>
+      <span class="toggler-line"></span>
+      <span class="toggler-line"></span>
+    </button>
+
+    <!-- Nav links -->
+    <div class="collapse navbar-collapse" id="apexNavMenu">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cars">Cars</a></li>
+        <li class="nav-item"><a class="nav-link" href="#racing">Racing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#drivers">Drivers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <a href="#" class="nav-search" aria-label="Search"><i class="fas fa-search"></i></a>
+        <a href="#contact" class="btn btn-apex-primary btn-sm">Join The Race</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<header id="home" class="hero-section">
+  <!-- Background image -->
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1541348263662-e8c0e4e2c3c6?w=1920&q=85&auto=format&fit=crop" alt="Race car speeding on a professional track at sunset" class="hero-img">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <!-- Speed lines -->
+  <div class="speed-lines" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- Content -->
+  <div class="container hero-content">
+    <div class="row">
+      <div class="col-lg-8 col-xl-7">
+        <p class="hero-label animate-fade-up">APEX MOTORSPORT</p>
+        <h1 class="hero-title animate-fade-up delay-1">
+          UNLEASH THE SPEED.<br>
+          <span class="text-red">DOMINATE THE TRACK.</span>
+        </h1>
+        <p class="hero-desc animate-fade-up delay-2">
+          Experience the world of high-performance racing, precision engineering and pure automotive adrenaline.
+        </p>
+        <div class="hero-buttons animate-fade-up delay-3">
+          <a href="#cars" class="btn btn-apex-primary btn-lg">EXPLORE THE CARS <i class="fas fa-arrow-right ms-2"></i></a>
+          <a href="#events" class="btn btn-apex-outline btn-lg">VIEW RACING EVENTS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <a href="#stats" class="scroll-indicator" aria-label="Scroll down">
+    <span class="scroll-mouse"></span>
+    <span class="scroll-text">SCROLL</span>
+  </a>
+</header>
+
+<!-- ============================================================
+     STATS STRIP
+============================================================ -->
+<section id="stats" class="stats-strip">
+  <div class="container">
+    <div class="row text-center g-4">
+      <div class="col-6 col-md-3 stat-item">
+        <div class="stat-number" data-target="320">0</div>
+        <div class="stat-label">Race Wins</div>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <div class="stat-number" data-target="180">0</div>
+        <div class="stat-label">Podium Finishes</div>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <div class="stat-number" data-target="25">0</div>
+        <div class="stat-label">Championships</div>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <div class="stat-number" data-target="15">0</div>
+        <div class="stat-label">Years of Racing</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURED CARS
+============================================================ -->
+<section id="cars" class="section-pad">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <p class="section-label">OUR MACHINES</p>
+      <h2 class="section-title">ENGINEERED TO WIN</h2>
+      <p class="section-sub">Precision engineering meets uncompromising performance.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Car 1 -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="car-card">
+          <div class="car-img-wrap">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80&auto=format&fit=crop" alt="APEX R1 track performance race car" loading="lazy">
+            <span class="car-category">Track Performance</span>
+          </div>
+          <div class="car-body">
+            <h3 class="car-name">APEX R1</h3>
+            <div class="car-specs">
+              <div class="spec"><span class="spec-val">850</span><span class="spec-unit">HP</span></div>
+              <div class="spec"><span class="spec-val">2.4</span><span class="spec-unit">0–100 KM/H</span></div>
+              <div class="spec"><span class="spec-val">320</span><span class="spec-unit">KM/H</span></div>
+            </div>
+            <a href="#showcase" class="btn btn-apex-outline btn-sm w-100">VIEW CAR <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Car 2 -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="car-card">
+          <div class="car-img-wrap">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80&auto=format&fit=crop" alt="APEX GT-X grand touring sports car" loading="lazy">
+            <span class="car-category">Grand Touring</span>
+          </div>
+          <div class="car-body">
+            <h3 class="car-name">APEX GT-X</h3>
+            <div class="car-specs">
+              <div class="spec"><span class="spec-val">720</span><span class="spec-unit">HP</span></div>
+              <div class="spec"><span class="spec-val">2.8</span><span class="spec-unit">0–100 KM/H</span></div>
+              <div class="spec"><span class="spec-val">305</span><span class="spec-unit">KM/H</span></div>
+            </div>
+            <a href="#showcase" class="btn btn-apex-outline btn-sm w-100">VIEW CAR <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Car 3 -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="car-card">
+          <div class="car-img-wrap">
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&q=80&auto=format&fit=crop" alt="APEX V12 ultimate performance supercar" loading="lazy">
+            <span class="car-category">Ultimate Performance</span>
+          </div>
+          <div class="car-body">
+            <h3 class="car-name">APEX V12</h3>
+            <div class="car-specs">
+              <div class="spec"><span class="spec-val">950</span><span class="spec-unit">HP</span></div>
+              <div class="spec"><span class="spec-val">2.1</span><span class="spec-unit">0–100 KM/H</span></div>
+              <div class="spec"><span class="spec-val">350</span><span class="spec-unit">KM/H</span></div>
+            </div>
+            <a href="#showcase" class="btn btn-apex-outline btn-sm w-100">VIEW CAR <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURED CAR SHOWCASE
+============================================================ -->
+<section id="showcase" class="showcase-section">
+  <div class="container-fluid px-0">
+    <div class="row g-0 align-items-stretch">
+      <!-- Left image -->
+      <div class="col-lg-6 showcase-img reveal">
+        <img src="https://images.unsplash.com/photo-1614026480209-cd4c5c4a2d3b?w=1200&q=85&auto=format&fit=crop" alt="Cinematic side view of the APEX R1 race car" loading="lazy">
+      </div>
+      <!-- Right content -->
+      <div class="col-lg-6 showcase-content reveal">
+        <p class="section-label">FLAGSHIP</p>
+        <h2 class="section-title">THE APEX R1</h2>
+        <p class="showcase-desc">Born on the track. Engineered without compromise.</p>
+
+        <div class="showcase-specs">
+          <div class="spec-row"><span>Horsepower</span><strong>850 HP</strong></div>
+          <div class="spec-row"><span>Top Speed</span><strong>320 KM/H</strong></div>
+          <div class="spec-row"><span>0–100 KM/H</span><strong>2.4 SEC</strong></div>
+          <div class="spec-row"><span>Engine</span><strong>V8 Twin Turbo</strong></div>
+          <div class="spec-row"><span>Weight</span><strong>1,280 KG</strong></div>
+        </div>
+
+        <a href="#contact" class="btn btn-apex-primary">DISCOVER THE R1 <i class="fas fa-arrow-right ms-2"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     RACING EVENTS
+============================================================ -->
+<section id="events" class="section-pad section-dark">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <p class="section-label">2026 SEASON</p>
+      <h2 class="section-title">THE RACING CALENDAR</h2>
+      <p class="section-sub">Four iconic circuits. One championship.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Event 1 -->
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="event-card">
+          <div class="event-img">
+            <img src="" alt="Monza Circuit race track" loading="lazy">
+            <span class="event-cat">Grand Prix</span>
+          </div>
+          <div class="event-body">
+            <h3 class="event-name">APEX GRAND PRIX</h3>
+            <p class="event-loc"><i class="fas fa-map-marker-alt"></i> Monza Circuit</p>
+            <p class="event-date">18 OCT 2026</p>
+            <a href="#" class="btn btn-apex-outline btn-sm w-100">VIEW EVENT</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="event-card">
+          <div class="event-img">
+            <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600&q=80&auto=format&fit=crop" alt="Night street race in Singapore" loading="lazy">
+            <span class="event-cat">Street Race</span>
+          </div>
+          <div class="event-body">
+            <h3 class="event-name">NIGHT STREET RACE</h3>
+            <p class="event-loc"><i class="fas fa-map-marker-alt"></i> Singapore</p>
+            <p class="event-date">07 NOV 2026</p>
+            <a href="#" class="btn btn-apex-outline btn-sm w-100">VIEW EVENT</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="event-card">
+          <div class="event-img">
+            <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=600&q=80&auto=format&fit=crop" alt="Dubai Autodrome desert GT race" loading="lazy">
+            <span class="event-cat">GT Challenge</span>
+          </div>
+          <div class="event-body">
+            <h3 class="event-name">DESERT GT CHALLENGE</h3>
+            <p class="event-loc"><i class="fas fa-map-marker-alt"></i> Dubai Autodrome</p>
+            <p class="event-date">21 NOV 2026</p>
+            <a href="#" class="btn btn-apex-outline btn-sm w-100">VIEW EVENT</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 4 -->
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="event-card">
+          <div class="event-img">
+            <img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?w=600&q=80&auto=format&fit=crop" alt="Abu Dhabi final circuit race" loading="lazy">
+            <span class="event-cat">Final</span>
+          </div>
+          <div class="event-body">
+            <h3 class="event-name">FINAL CIRCUIT</h3>
+            <p class="event-loc"><i class="fas fa-map-marker-alt"></i> Abu Dhabi</p>
+            <p class="event-date">05 DEC 2026</p>
+            <a href="#" class="btn btn-apex-outline btn-sm w-100">VIEW EVENT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DRIVERS
+============================================================ -->
+<section id="drivers" class="section-pad">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <p class="section-label">THE TEAM</p>
+      <h2 class="section-title">MEET THE DRIVERS</h2>
+      <p class="section-sub">Elite athletes pushing the limits of speed.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Driver 1 -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="driver-card">
+          <div class="driver-img">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80&auto=format&fit=crop" alt="Alex Carter professional racing driver portrait" loading="lazy">
+            <span class="driver-num">#07</span>
+          </div>
+          <div class="driver-info">
+            <h3 class="driver-name">ALEX CARTER</h3>
+            <p class="driver-country"><i class="fas fa-flag"></i> United Kingdom</p>
+            <div class="driver-stats">
+              <div><strong>42</strong><span>Wins</span></div>
+              <div><strong>78</strong><span>Podiums</span></div>
+              <div><strong>3</strong><span>Titles</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Driver 2 -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="driver-card">
+          <div class="driver-img">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&auto=format&fit=crop" alt="Max Riley professional racing driver portrait" loading="lazy">
+            <span class="driver-num">#21</span>
+          </div>
+          <div class="driver-info">
+            <h3 class="driver-name">MAX RILEY</h3>
+            <p class="driver-country"><i class="fas fa-flag"></i> Australia</p>
+            <div class="driver-stats">
+              <div><strong>36</strong><span>Wins</span></div>
+              <div><strong>64</strong><span>Podiums</span></div>
+              <div><strong>2</strong><span>Titles</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Driver 3 -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="driver-card">
+          <div class="driver-img">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80&auto=format&fit=crop" alt="Leo Martin professional racing driver portrait" loading="lazy">
+            <span class="driver-num">#44</span>
+          </div>
+          <div class="driver-info">
+            <h3 class="driver-name">LEO MARTIN</h3>
+            <p class="driver-country"><i class="fas fa-flag"></i> France</p>
+            <div class="driver-stats">
+              <div><strong>29</strong><span>Wins</span></div>
+              <div><strong>51</strong><span>Podiums</span></div>
+              <div><strong>1</strong><span>Titles</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PERFORMANCE SECTION
+============================================================ -->
+<section id="racing" class="performance-section">
+  <div class="performance-bg">
+    <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1920&q=85&auto=format&fit=crop" alt="Close-up of a high-performance race engine" loading="lazy">
+    <div class="performance-overlay"></div>
+  </div>
+  <div class="container performance-content">
+    <div class="section-header text-center reveal">
+      <p class="section-label">PURE POWER</p>
+      <h2 class="section-title">PERFORMANCE WITHOUT LIMITS</h2>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-md-3 reveal">
+        <div class="perf-box glass-box">
+          <div class="perf-val">850</div>
+          <div class="perf-unit">HP</div>
+          <div class="perf-label">Maximum Power</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 reveal">
+        <div class="perf-box glass-box">
+          <div class="perf-val">900</div>
+          <div class="perf-unit">NM</div>
+          <div class="perf-label">Torque</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 reveal">
+        <div class="perf-box glass-box">
+          <div class="perf-val">320</div>
+          <div class="perf-unit">KM/H</div>
+          <div class="perf-label">Top Speed</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 reveal">
+        <div class="perf-box glass-box">
+          <div class="perf-val">2.4</div>
+          <div class="perf-unit">SEC</div>
+          <div class="perf-label">0–100 KM/H</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     RACING EXPERIENCE
+============================================================ -->
+<section class="section-pad section-dark">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <p class="section-label">GET INVOLVED</p>
+      <h2 class="section-title">LIVE THE RACING EXPERIENCE</h2>
+      <p class="section-sub">Four ways to feel the adrenaline.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="exp-card">
+          <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600&q=80&auto=format&fit=crop" alt="Track day racing experience" loading="lazy">
+          <div class="exp-overlay">
+            <i class="fas fa-flag-checkered exp-icon"></i>
+            <h3>Track Days</h3>
+            <p>Drive your own car on legendary circuits.</p>
+            <a href="#" class="exp-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="exp-card">
+          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&q=80&auto=format&fit=crop" alt="Race training program" loading="lazy">
+          <div class="exp-overlay">
+            <i class="fas fa-fire exp-icon"></i>
+            <h3>Race Training</h3>
+            <p>Learn from professional racing drivers.</p>
+            <a href="#" class="exp-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="exp-card">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80&auto=format&fit=crop" alt="Supercar driving experience" loading="lazy">
+          <div class="exp-overlay">
+            <i class="fas fa-car-side exp-icon"></i>
+            <h3>Supercar Experience</h3>
+            <p>Drive the world's most exclusive machines.</p>
+            <a href="#" class="exp-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="exp-card">
+          <img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?w=600&q=80&auto=format&fit=crop" alt="VIP racing event hospitality" loading="lazy">
+          <div class="exp-overlay">
+            <i class="fas fa-ticket-alt exp-icon"></i>
+            <h3>VIP Racing Events</h3>
+            <p>Exclusive paddock access and hospitality.</p>
+            <a href="#" class="exp-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FULL-WIDTH PROMO BANNER
+============================================================ -->
+<section class="promo-banner">
+  <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=1920&q=85&auto=format&fit=crop" alt="Race car driving at high speed during sunset" loading="lazy">
+  <div class="promo-overlay"></div>
+  <div class="promo-speed-lines" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+  <div class="container promo-content text-center">
+    <h2 class="promo-title reveal">FEEL EVERY SECOND.</h2>
+    <p class="promo-desc reveal">Your next racing experience starts here.</p>
+    <a href="#contact" class="btn btn-apex-primary btn-lg reveal">BOOK YOUR EXPERIENCE</a>
+  </div>
+</section>
+
+<!-- ============================================================
+     GALLERY
+============================================================ -->
+<section id="gallery" class="section-pad">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <p class="section-label">GALLERY</p>
+      <h2 class="section-title">INSIDE THE WORLD OF APEX</h2>
+      <p class="section-sub">Cinematic moments from the track.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item reveal" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1541348263662-e8c0e4e2c3c6?w=1200&q=85&auto=format&fit=crop" data-caption="Race car on track">
+        <img src="https://images.unsplash.com/photo-1541348263662-e8c0e4e2c3c6?w=600&q=80&auto=format&fit=crop" alt="Race car on track" loading="lazy">
+        <div class="gallery-hover"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1200&q=85&auto=format&fit=crop" data-caption="Racing helmet">
+        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600&q=80&auto=format&fit=crop" alt="Racing helmet" loading="lazy">
+        <div class="gallery-hover"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1200&q=85&auto=format&fit=crop" data-caption="Engine detail">
+        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&q=80&auto=format&fit=crop" alt="Engine detail" loading="lazy">
+        <div class="gallery-hover"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=1200&q=85&auto=format&fit=crop" data-caption="Night race">
+        <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600&q=80&auto=format&fit=crop" alt="Night race" loading="lazy">
+        <div class="gallery-hover"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=1200&q=85&auto=format&fit=crop" data-caption="Pit crew">
+        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=600&q=80&auto=format&fit=crop" alt="Pit crew" loading="lazy">
+        <div class="gallery-hover"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?w=1200&q=85&auto=format&fit=crop" data-caption="Podium celebration">
+        <img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?w=600&q=80&auto=format&fit=crop" alt="Podium celebration" loading="lazy">
+        <div class="gallery-hover"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1614026480209-cd4c5c4a2d3b?w=1200&q=85&auto=format&fit=crop" data-caption="GT racing car">
+        <img src="https://images.unsplash.com/photo-1614026480209-cd4c5c4a2d3b?w=600&q=80&auto=format&fit=crop" alt="GT racing car" loading="lazy">
+        <div class="gallery-hover"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item reveal" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1200&q=85&auto=format&fit=crop" data-caption="Supercar detail">
+        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600&q=80&auto=format&fit=crop" alt="Supercar detail" loading="lazy">
+        <div class="gallery-hover"><i class="fas fa-expand"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Modal -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <button type="button" class="btn-close btn-close-white gallery-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <img src="" alt="Gallery enlarged view" class="modal-gallery-img" id="modalGalleryImg">
+      <p class="text-center text-white mt-3" id="modalGalleryCaption"></p>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     TESTIMONIALS
+============================================================ -->
+<section class="section-pad section-dark">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <p class="section-label">TESTIMONIALS</p>
+      <h2 class="section-title">WHAT THE FANS SAY</h2>
+    </div>
+
+    <div id="testimonialCarousel" class="carousel slide reveal" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The most incredible racing experience I've ever had. The cars, the track and the atmosphere were absolutely unforgettable."</p>
+            <div class="testimonial-author">
+              <strong>Daniel Wilson</strong>
+              <span>Motorsport Enthusiast</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"APEX RACING delivers pure adrenaline. The attention to detail and the professionalism of the entire team is second to none."</p>
+            <div class="testimonial-author">
+              <strong>Sarah Mitchell</strong>
+              <span>Track Day Participant</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"From the pit lane to the podium, everything feels premium. This is what motorsport should be. I'll be back every season."</p>
+            <div class="testimonial-author">
+              <strong>James Anderson</strong>
+              <span>VIP Member</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-indicators apex-indicators">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     NEWSLETTER
+============================================================ -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-box reveal">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <p class="section-label">NEWSLETTER</p>
+          <h2 class="section-title mb-2">JOIN THE GRID</h2>
+          <p class="newsletter-desc">Get the latest racing news, events, car launches and exclusive APEX experiences.</p>
+        </div>
+        <div class="col-lg-6">
+          <form id="newsletterForm" class="newsletter-form" novalidate>
+            <div class="input-group">
+              <input type="email" class="form-control" id="newsletterEmail" placeholder="Email Address" required aria-label="Email Address">
+              <button class="btn btn-apex-primary" type="submit">SUBSCRIBE</button>
+            </div>
+            <p class="form-feedback" id="newsletterFeedback"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+============================================================ -->
+<section id="contact" class="section-pad">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <p class="section-label">CONTACT</p>
+      <h2 class="section-title">GET IN TOUCH</h2>
+    </div>
+
+    <div class="row g-5">
+      <!-- Left info -->
+      <div class="col-lg-5 reveal">
+        <div class="contact-info">
+          <h3 class="contact-brand">APEX RACING</h3>
+          <p class="contact-tagline">Built for Speed. Driven by Passion.</p>
+          <ul class="contact-list">
+            <li><i class="fas fa-map-marker-alt"></i> Monza, Italy</li>
+            <li><i class="fas fa-envelope"></i> hello@apexracing.com</li>
+            <li><i class="fas fa-phone"></i> +39 02 5555 0199</li>
+          </ul>
+          <div class="contact-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right form -->
+      <div class="col-lg-7 reveal">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control" id="contactName" placeholder="Full Name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" id="contactEmail" placeholder="Email" required>
+            </div>
+            <div class="col-12">
+              <input type="text" class="form-control" id="contactSubject" placeholder="Subject" required>
+            </div>
+            <div class="col-12">
+              <textarea class="form-control" id="contactMessage" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-apex-primary btn-lg">SEND MESSAGE <i class="fas fa-paper-plane ms-2"></i></button>
+              <p class="form-feedback" id="contactFeedback"></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="apex-footer" id="about">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Col 1 -->
+      <div class="col-lg-4 col-md-6">
+        <a class="apex-logo footer-logo" href="#home">
+          <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+          <span class="logo-text">APEX<span class="logo-red">RACING</span></span>
+        </a>
+        <p class="footer-tagline">"Built for Speed. Driven by Passion."</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="col-lg-2 col-md-6 col-6">
+        <h4 class="footer-heading">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#cars">Cars</a></li>
+          <li><a href="#racing">Racing</a></li>
+          <li><a href="#drivers">Drivers</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="col-lg-2 col-md-6 col-6">
+        <h4 class="footer-heading">Racing</h4>
+        <ul class="footer-links">
+          <li><a href="#events">Events</a></li>
+          <li><a href="#">Championships</a></li>
+          <li><a href="#drivers">Drivers</a></li>
+          <li><a href="#">Track Days</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="footer-heading">Follow Us</h4>
+        <ul class="footer-links footer-social-links">
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+          <li><a href="#"><i class="fab fa-x-twitter"></i> X</a></li>
+          <li><a href="#"><i class="fab fa-tiktok"></i> TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 APEX RACING. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="index.js"></script>
+</body>
+</html>
